@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background: #fafafa;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Global styles starts*/
+
+.title-text {
+  text-align: center;
+}
+
+.title-text h1 {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ff2a75;
+  padding: 10px;
+}
+
+/* Global styles ends*/
+
+
+/* Header section styles starts */
+
+.header {
+  padding: 10px 16px;
+  background:  rgb(255, 255, 255 ,1);
+  
+}
+
+.nav-bar {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #555;
+  padding: 10px;
+}
+.nav-bar a:hover{
+  color: #ff2a75;
+  border-bottom: 2px solid #ff2a75;
+}
+.head-container {
+  background-color: rgb(255, 255, 255 ,1);
+  padding: 30px;
+  text-align: center;
+}
+
+.head-container h1 {
+  padding: 10px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+.head-container p{
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky+.about-content {
+  padding-top: 102px;
+}
+.home-img img {
+ width: 100%;
+ height: 800px;
+ object-fit: cover;
+}
+
+/* Header section styles ends */
+
+/* about section style starts */
+
+.about-content {
+  text-align: center;
+}
+.about-text{
+  padding: 2% 10%;
+}
+
+/* about section style ends */
+
+
+/* gallery section style starts */
+
+.masonry {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 0.5rem;
+  margin: 2.5em;
+  padding: 0;
+  font-size: .85em;
+}
+
+.gallery-item {
+  display: inline-block;
+  margin: 0 0 0.5em;
+  width: 100%;
+  transition: 1s ease all;
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  cursor: pointer;
+
+}
+.gallery-item img:hover {
+ opacity: .9;
+ width: 110%;
+ height: 110%;
+
+  
+}
+
+
+@media only screen and (max-width: 320px) {
+  .masonry {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .masonry {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .masonry {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .masonry {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+/* gallery section style ends */
+
+
+/* contact details seection style starts */
+
+.contact-details {
+  margin: 40px;
+  padding: 40px 0;
+  background: url(bg-pat.png) #f0f4f7 repeat;
+}
+
+.contact-details-row {
+  width: 80%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #fafafa;
+}
+
+.contact-details-col {
+  flex-basis: 28%;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.contact-details-col p {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cont-info {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-details-col:hover {
+  transform: translateY(-7px);
+}
+
+@media screen and (max-width:750px) {
+  .contact-details-col {
+    flex-basis: 100%;
+  }
+}
+
+/* contact details seection style ends */
+
+
+/*location style starts*/
+
+.loc-container {
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.loc-container h1 {
+  color: #27c0ff;
+  font-size: 32px;
+}
+
+.loc-img {
+  height: 400px;
+ padding: 40px;
+}
+
+/*location style ends*/
+
+
+.doveloper-info {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #f0f4f7;
+}
+.ter-con{
+  margin-bottom: 10px;
+}
+.ter-con a{
+  color: #555;
+}
+.doveloper-info p a {
+  text-decoration: none;
+  color: #ff2a75;
+}
+
+.social-links{
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+.social-links a{
+  text-decoration: none;
+  margin: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+
+
+/* 
+ Terms & Condition Section */
+
+ .terms-condition{
+  width: 84%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+ }
+ .terms-condition h2{
+  padding: 0  0 10px;
+ }
+
+ .terms-condition h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 700;
+ }
+ .terms-condition h4{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .terms-condition p{
+  line-gap-override: 10px;
+ }
+
+ .terms-condition p span{
+color: #ff2a75;
+font-weight: 600;
+ }
